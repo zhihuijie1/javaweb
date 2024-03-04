@@ -1,0 +1,26 @@
+#springboot的配置很死，采用文件配置的方法来替换默认配置
+server:
+  port: 8084
+
+person:
+  name1: "橙橙"
+  age1: 22
+  name2: "茁越"
+  age2: 23
+
+#数组
+city:
+  - beijing
+  - shanghai
+  - guangzhou
+  - shenzhen
+  - qingdao
+# 双引号->考虑转义字符
+message1: "hello \n zhuoyue"
+# 单引号->忽略转移字符
+message2: 'hello \n zhuoyue'
+
+# 参数引用
+name: fucking fucked
+zoo:
+  zooname: ${name}
